@@ -9,6 +9,7 @@
 FROM rbecheras/ubuntu-node:18.04-8
 LABEL Author="Rémi Becheras <remi.becheras@gmail.com>"
 
+USER 0
 # Install Node.js, Yarn and required dependencies
 RUN apt-get update \
   && apt-get install -y curl gnupg build-essential \
