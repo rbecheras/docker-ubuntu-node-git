@@ -26,8 +26,6 @@ RUN apt-get update \
   && apt-get clean \
   && apt-get autoclean
 
-RUN adduser --disabled-password --gecos "" --uid 1000 node
-
 USER 1000
 WORKDIR /home/node
 CMD ["node"]
